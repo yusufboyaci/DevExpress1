@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="padding: 10px;">
+    <div id="widget"></div>
+</div>
+<script>
+    new DevExpress.viz.dxPieChart(document.getElementById("widget"), {
+        "dataSource": [
+            {
+                "arg": "Russia",
+                "val": 12
+            },
+            {
+                "arg": "Canada",
+                "val": 7
+            },
+            {
+                "arg": "USA",
+                "val": 7
+            },
+            {
+                "arg": "China",
+                "val": 7
+            },
+            {
+                "arg": "Brazil",
+                "val": 6
+            },
+            {
+                "arg": "Australia",
+                "val": 5
+            },
+            {
+                "arg": "India",
+                "val": 2
+            },
+            {
+                "arg": "Others",
+                "val": 55
+            }
+        ],
+        "legend": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom"
+        },
+        "series": {
+            "argumentField": "arg",
+            "valueField": "val"
+        }
+    });
+
+</script>
