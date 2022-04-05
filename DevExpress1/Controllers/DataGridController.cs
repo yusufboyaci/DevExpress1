@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevExpress1.Controllers
 {
-    public class DataGripController : Controller
+    public class DataGridController : Controller
     {
         public IActionResult Index()
         {
