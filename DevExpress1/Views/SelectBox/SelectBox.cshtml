@@ -20,14 +20,40 @@
         ID: 3,
         Name: 'Bardak',
         Category: 'Porselen'
+    },
+    {
+        ID: 4,
+        Name: 'Banana',
+        Category: 'Fruits'
+    }, {
+        ID: 5,
+        Name: 'Cucumber',
+        Category: 'Vegetables'
+    }, {
+        ID: 6,
+        Name: 'Apple',
+        Category: 'Fruits'
+    }, {
+        ID: 7,
+        Name: 'Tomato',
+        Category: 'Vegetables'
+    }, {
+        ID: 8,
+        Name: 'Apricot',
+        Category: 'Fruits'
     }
-    ]
+    ];
 
     $(document).ready(function () {
         $('#selectBox').dxSelectBox({
             dataSource: data,
             valueExpr: 'ID',//Value değeri
-            displayExpr: 'Name'//Gösterilecek sonuc değeri
+            displayExpr: 'Name',//Gösterilecek sonuc değeri
+            searchEnabled: true,
+            onValueChanged: function (e) {
+                console.log(e.value);
+                console.log(e.previousValue);
+            }
         })
     })
 </script>

@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "StandardBar";
+}
+<style>
+    #chart {
+        height: 440px
+    }
+</style>
+<h1>StandardBar</h1>
+
+<div>
+
+    @(Html.DevExtreme().Chart().ID("chart").Series(s => s
+    .Add()
+    .ArgumentField("Day")
+    .ValueField("Deger")
+    .Name("Çalışma Zamanı")
+    .Type(SeriesType.Bar)
+    .Color("blue")
+    )
+        .DataSource(new[]
+        {
+        new {Day = "Pazartesi", Deger = 5},
+        new {Day = "Salı", Deger = 8},
+        new {Day = "Çarşamba", Deger = 1},
+        new {Day = "Perşembe", Deger = 4},
+        new {Day = "Cuma", Deger = 4},
+        new {Day = "Cumartesi", Deger = 7},
+        new {Day = "Pazar", Deger = 3}
+        })
+)
+</div>
