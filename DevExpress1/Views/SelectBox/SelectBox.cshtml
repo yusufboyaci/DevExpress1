@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "SelectBox";
+}
+
+<h1>SelectBox</h1>
+<div id="selectBox"></div>
+<script>
+    const data = [{
+        ID: 1,
+        Name: 'Nilufer',
+        Category: 'Kitap'
+    },
+    {
+        ID: 2,
+        Name: 'Passat',
+        Category: 'Araba'
+    },
+    {
+        ID: 3,
+        Name: 'Bardak',
+        Category: 'Porselen'
+    }
+    ]
+
+    $(document).ready(function () {
+        $('#selectBox').dxSelectBox({
+            dataSource: data,
+            valueExpr: 'ID',//Value değeri
+            displayExpr: 'Name'//Gösterilecek sonuc değeri
+        })
+    })
+</script>

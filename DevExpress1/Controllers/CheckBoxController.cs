@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace DevExpress1.Controllers
 {
-    public class SelectBoxController : Controller
+    public class CheckBoxController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-        public IActionResult SelectBox()
+        public IActionResult CheckBox()
         {
             return View();
         }
