@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DevExpress1.Areas.BarCharts.Controllers
 {
+    [Area("BarCharts")]
     public class HomeController : Controller
     {
-        [Area("BarCharts")]
+       
         public IActionResult Index()
         {
             return View();

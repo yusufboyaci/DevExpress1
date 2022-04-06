@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DevExpress1.Areas.PieCharts.Controllers
 {
+    [Area("PieCharts")]
     public class HomeController : Controller
     {
-        [Area("PieCharts")]
+       
         public IActionResult Index()
         {
             return View();
