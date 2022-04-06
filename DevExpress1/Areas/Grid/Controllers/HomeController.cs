@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DevExpress1.Controllers
+namespace DevExpress1.Areas.Grid.Controllers
 {
-    public class DataGridController : Controller
+    [Area("Grid")]
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {
