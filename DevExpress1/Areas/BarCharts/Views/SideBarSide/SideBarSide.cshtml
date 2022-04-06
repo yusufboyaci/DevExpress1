@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "SideBarSide";
+}
+
+<h1>SideBarSide</h1>
+
+@(Html.DevExtreme().Chart()
+    .ID("chart")
+    .CommonSeriesSettings(s => s
+        .ArgumentField("State")
+        .Type(SeriesType.Bar)
+        .HoverMode(ChartSeriesHoverMode.AllArgumentPoints)
+        .SelectionMode(ChartSeriesSelectionMode.AllArgumentPoints)
+        .Label(l => l
+            .Visible(true)
+            .Format(f => f
+                .Type(Format.FixedPoint)
+                .Precision(0)
+            )
+        )
+    )
+    .Series(s => {
+        s.Add().ValueField("Year2018").Name("2018");
+        s.Add().ValueField("Year2017").Name("2017");
+        s.Add().ValueField("Year2016").Name("2016");
+    })
+    .Title("Gross State Product within the Great Lakes Region")
+    .Legend(l => l
+        .VerticalAlignment(VerticalEdge.Bottom)
+        .HorizontalAlignment(HorizontalAlignment.Center)
+    )
+    .Export(e => e.Enabled(true))
+    .OnPointClick(@<text>
+        function(e) {
+            e.target.select();
+        }
+    </text>)
+    .DataSource(new[] {
+        new { State = "Illinois", Year2016 = 803, Year2017 = 823, Year2018 = 863 },
+        new { State = "Indiana", Year2016 = 316, Year2017 = 332, Year2018 = 332 },
+        new { State = "Michigan", Year2016 = 452, Year2017 = 459, Year2018 = 470 },
+        new { State = "Ohio", Year2016 = 621, Year2017 = 642, Year2018 = 675 },
+        new { State = "Wisconsin", Year2016 = 290, Year2017 = 294, Year2018 = 301 }
+    })
+)

@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DevExpress1.Controllers
+namespace DevExpress1.Areas.BarCharts.Controllers
 {
-    public class StandartBarController : Controller
+    public class HomeController : Controller
     {
-        public IActionResult StandardBar()
+        [Area("BarCharts")]
+        public IActionResult Index()
         {
             return View();
         }
