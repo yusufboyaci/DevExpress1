@@ -13,5 +13,10 @@ namespace DevExpress1.Areas.BarCharts.Controllers
         {
             return View();
         }
+
+        public IActionResult StandartBar2()
+        {
+            return View();
+        }
     }
 }
