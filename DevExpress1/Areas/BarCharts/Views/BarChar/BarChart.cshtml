@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "BarChart";
+}
+
+<h1>BarChart</h1>
+<div id="chartContainer" class="mb-5"></div>
+<div id="data" class="mt-5"></div>
+<script>
+    
+    var fruitProduction = [
+        { fruit: "Apples", year2014: 84, year2015: 82, year2016: 90 },
+        { fruit: "Oranges", year2014: 72, year2015: 70, year2016: 76 }
+    ];
+
+    var data = [
+        { araba: 'i10', year: '2016' },
+        { araba: '20', year: '2018' },
+    ];
+    $(document).ready(function () {
+        $('#data').dxChart({
+            dataSource: data,
+            series: {
+                argumentField: 'araba',
+                valueField: 'year',
+                name:'i10-i20'
+            }
+        })
+    });
+
+    $(function () {
+        $("#chartContainer").dxChart({
+            dataSource: fruitProduction,
+            series: {
+                argumentField: 'fruit',
+                valueField: 'year2014',
+                name: '2014'
+            }
+        });
+    });
+</script>
