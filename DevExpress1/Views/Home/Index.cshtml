@@ -9,7 +9,16 @@
 </div>
 @(Html.DevExtreme().SelectBox().ID("FirmaTur")
     .DisplayExpr("Text").NoDataText("Gösterilecek kayıt bulunamadı."))
-
+<br />
+<br />
+<br />
+<br />
+<button id="PivotGrid" class="btn btn-outline-info"> Pivot Grid e git</button>
+<script>
+    $('#PivotGrid').click(function () {
+        window.location.href = 'https://localhost:44384/pivotgrid/Index';
+    })
+</script>
 
 
 

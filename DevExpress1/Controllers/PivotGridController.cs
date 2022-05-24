@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DevExpress1.Areas.BasicComponents.Controllers
+namespace DevExpress1.Controllers
 {
-    [Area("BasicComponents")]
-    public class CheckBoxController : Controller
+    public class PivotGridController : Controller
     {
         public IActionResult Index()
         {

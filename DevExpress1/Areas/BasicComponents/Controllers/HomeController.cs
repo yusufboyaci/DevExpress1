@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevExpress1.Areas.BasicComponents.Controllers
 {
+    [Area("BasicComponents")]
     public class HomeController : Controller
     {
         public IActionResult Index()
