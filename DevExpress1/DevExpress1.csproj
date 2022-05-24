@@ -16,6 +16,8 @@
   <ItemGroup>
     <Folder Include="Areas\BarCharts\Data\" />
     <Folder Include="Areas\BarCharts\Models\" />
+    <Folder Include="Areas\BasicComponents\Data\" />
+    <Folder Include="Areas\BasicComponents\Models\" />
     <Folder Include="Areas\Grid\Data\" />
     <Folder Include="Areas\Grid\Models\" />
     <Folder Include="Areas\PieCharts\Data\" />
