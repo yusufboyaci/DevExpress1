@@ -7,7 +7,7 @@
     <PackageReference Include="DevExtreme.Library" Version="17.1.5" />
     <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="20.2.7" />
     <PackageReference Include="DevExpress.AspNetCore.RichEdit" Version="20.2.7" />
-    <PackageReference Include="DevExtreme.AspNet.Core" Version="21.2.8" />
+    <PackageReference Include="DevExtreme.AspNet.Core" Version="20.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.14" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
